@@ -1,0 +1,118 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2a003d;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo morado y blanco futurista */
+header {
+    background-color: #6a0dad;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.separator {
+    width: 80%;
+    height: 3px;
+    margin: 20px auto;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    border-radius: 5px;
+    animation: separator-animation 3s linear infinite;
+}
+
+@keyframes separator-animation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Sección de pago */
+.payment-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    color: #6a0dad;
+}
+
+h2 {
+    color: #6a0dad;
+    font-size: 2em;
+}
+
+.input-container, .discount-container {
+    margin: 20px 0;
+}
+
+#bill-price {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #6a0dad;
+    border-radius: 5px;
+    width: 80%;
+    color: #6a0dad;
+    background-color: #f3f3f3;
+}
+
+.discount-container {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#discounted-price {
+    font-weight: bold;
+    color: #6a0dad;
+}
+
+/* Botones */
+.options-container button {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options-container button:hover {
+    background-color: #531a93;
+}
+
+/* QR y validación */
+#payment-info {
+    margin-top: 20px;
+}
+
+#payment-info h3 {
+    color: #6a0dad;
+    font-size: 1.5em;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+#validate-btn {
+    background-color: #6a0dad;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}

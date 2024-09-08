@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Lives</title>
+    <link rel="stylesheet" href="lives.css">
+</head>
+<body>
+    <header>
+        <h1 class="rgb-text">Compra de Lives</h1>
+        <hr class="separator">
+    </header>
+
+    <section class="purchase-section">
+        <h2>Compra tus lives con estilo</h2>
+        <p>Cada live tiene un precio de <strong>20,000</strong> COP.</p>
+        <p>BIN:</strong> 49151</p>
+
+        <div class="price-container">
+            <p>¿Cuántos lives deseas comprar?</p>
+            <input type="number" id="quantity" placeholder="Cantidad" min="1" value="1">
+            <p>Total a pagar: <span id="total-price">20,000</span> COP</p>
+        </div>
+
+        <div class="options-container">
+            <button id="buy-btn">Comprar</button>
+        </div>
+
+        <div id="payment-info" style="display: none;">
+            <h3>Pago por Nequi</h3>
+            <img src="Qr.jpg" alt="Código QR de pago" class="qr-code">
+            <p>Después de enviar el pago, haz clic en validar.</p>
+            <button id="validate-btn">Validar</button>
+        </div>
+    </section>
+
+    <script src="lives.js"></script>
+</body>
+</html>

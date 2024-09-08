@@ -1,0 +1,136 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #004d00;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.separator {
+    width: 80%;
+    height: 3px;
+    margin: 20px auto;
+    background: linear-gradient(90deg, #00ff99, #00ccff);
+    border-radius: 5px;
+}
+
+/* Sección de recarga */
+.recharge-section {
+    background-color: #f0f0f0;
+    color: #004d00;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.toggle-btn {
+    background-color: #008000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Opciones de recarga */
+.recharge-options {
+    display: none;
+}
+
+.recharge-option {
+    background-color: #e6ffe6; /* Regreso al estilo original limpio */
+    border: 2px solid #004d00;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px; /* Bordes suaves */
+}
+
+h3 {
+    color: #004d00;
+    font-size: 1.5em;
+}
+
+p {
+    color: #333;
+}
+
+/* Botón de compra */
+.buy-btn {
+    background-color: #004d00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #003300;
+}
+
+/* Información de pago */
+.payment-info {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+}
+
+/* Botón de validar */
+.validate-btn {
+    background-color: #00ff99;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.validate-btn:hover {
+    background-color: #00cc66;
+}
+
+/* Requisitos */
+.requisitos-info {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.requisitos-info ul {
+    list-style-type: none;
+    padding: 0;
+    color: #004d00;
+}
+
+.requisitos-info li {
+    margin: 10px 0;
+}
