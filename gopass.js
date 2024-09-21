@@ -10,6 +10,11 @@ document.getElementById('toggle-btn').addEventListener('click', function() {
     options.style.display = options.style.display === 'block' ? 'none' : 'block';
 });
 
+document.getElementById('garantia-btn').addEventListener('click', function() {
+    var garantiaInfo = document.getElementById('garantia-info');
+    garantiaInfo.style.display = garantiaInfo.style.display === 'none' ? 'block' : 'none';
+});
+
 // Mostrar el QR en la misma sección de compra
 document.querySelectorAll('.buy-btn').forEach(button => {
     button.addEventListener('click', function() {
