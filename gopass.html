@@ -23,6 +23,16 @@
             </ul>
         </div>
 
+        <button class="toggle-btn" id="garantia-btn">Garantía</button>
+        <div class="garantia-info" id="garantia-info">
+            <ul>
+                <li>Para la recarga de 100,000, la Garantía es de 2 días.</li>
+                <li>Para la recarga de 200,000, la Garantía es de 3 días.</li>
+                <li>Para la recarga de 250,000, la Garantía es de 5 días.</li>
+                <li>Para la recarga de 399,000, la Garantía es de 7 días.</li>
+            </ul>
+        </div>
+
         <h2>Selecciona tu opción de recarga</h2>
         <button class="toggle-btn" id="toggle-btn">Mostrar opciones de recarga</button>
         <div class="recharge-options" id="recharge-options">
@@ -53,6 +63,17 @@
             <div class="recharge-option" data-price="85000">
                 <h3>250,000 de saldo</h3>
                 <p>Precio: <strong>85,000 COP</strong></p>
+                <button class="buy-btn">Comprar</button>
+                <div class="payment-info" style="display: none;">
+                    <h3>Pago por Nequi</h3>
+                    <img src="Qr.jpg" alt="Código QR de pago" class="qr-code">
+                    <p>Después de enviar el pago, haz clic en validar.</p>
+                    <button class="validate-btn">Validar</button>
+                </div>
+            </div>
+            <div class="recharge-option" data-price="85000">
+                <h3>399,000 de saldo</h3>
+                <p>Precio: <strong>140,000 COP</strong></p>
                 <button class="buy-btn">Comprar</button>
                 <div class="payment-info" style="display: none;">
                     <h3>Pago por Nequi</h3>
