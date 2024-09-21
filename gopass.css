@@ -36,6 +36,16 @@ h1 {
     padding: 30px;
 }
 
+/* Sección de recarga */
+.garantia-section {
+    background-color: #f0f0f0;
+    color: #004d00;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+}
+
 h2 {
     font-size: 2em;
 }
@@ -132,5 +142,23 @@ p {
 }
 
 .requisitos-info li {
+    margin: 10px 0;
+}
+
+.garantia-info {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.garantia-info ul {
+    list-style-type: none;
+    padding: 0;
+    color: #004d00;
+}
+
+.garantia-info li {
     margin: 10px 0;
 }
