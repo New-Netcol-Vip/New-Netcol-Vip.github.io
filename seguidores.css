@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #0d0d0d;
+    color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #00ffcc;
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.8);
+}
+
+p {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+.platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.platform {
+    background: #1c1c1c;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.platform:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 255, 204, 0.5);
+}
+
+.futuristic-title {
+    font-size: 2.5em;
+    color: #00ffcc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: glitch 2s infinite;
+    position: relative;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.8);
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px 5px #00ffcc, -2px -2px 5px #ff00ff; transform: translate(0); }
+    20% { text-shadow: -2px -2px 5px #00ffcc, 2px 2px 5px #ff00ff; transform: translate(-3px, 3px); }
+    40% { text-shadow: 3px 3px 5px #00ffcc, -3px -3px 5px #ff00ff; transform: translate(2px, -2px); }
+    60% { text-shadow: -3px -3px 5px #00ffcc, 3px 3px 5px #ff00ff; transform: translate(-1px, 1px); }
+    80% { text-shadow: 2px 2px 5px #00ffcc, -2px -2px 5px #ff00ff; transform: translate(3px, -3px); }
+    100% { text-shadow: 0 0 10px rgba(0, 255, 204, 0.8); transform: translate(0); }
+}
+
+.pricing {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #cccccc;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #333333;
+    color: #00ffcc;
+    font-size: 1em;
+}
+
+.buy-btn {
+    background: #00ffcc;
+    border: none;
+    padding: 10px 20px;
+    color: #0d0d0d;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buy-btn:hover {
+    background: #00ffa3;
+}
+
+.payment {
+    margin-top: 20px;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+}
+
+.validate-btn {
+    background: #00ffcc;
+    border: none;
+    padding: 10px;
+    color: #0d0d0d;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.validate-btn:hover {
+    background: #00ffa3;
+}
+
+.hidden {
+    display: none;
+}

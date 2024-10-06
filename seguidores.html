@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Seguidores</title>
+    <link rel="stylesheet" href="seguidores.css">
+    <script src="seguidores.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Venta de Seguidores</h1>
+            <p>Selecciona tu plataforma y establece la cantidad de seguidores que deseas comprar (mínimo 1000).</p>
+        </header>
+
+        <section class="platforms">
+            <div class="platform" id="tiktok">
+                <h2 class="futuristic-title">TikTok</h2>
+                <div class="pricing">
+                    <label for="tiktok-followers">Cantidad de Seguidores:</label>
+                    <input type="number" id="tiktok-followers" value="1000" min="1000" onchange="updatePrice('TikTok', 4)">
+                    <p>Precio total: $<span id="tiktok-price">4</span> USD</p>
+                </div>
+                <button class="buy-btn" onclick="showPayment('tiktok', 4)">Comprar</button>
+                <div id="tiktok-payment" class="payment hidden">
+                    <h3>Pago por Nequi</h3>
+                    <img src="Qr.jpg" alt="Código QR de Nequi" class="qr-code">
+                    <p>Después de enviar el pago, haz clic en "Validar".</p>
+                    <button class="validate-btn" id="tiktok-validate-btn">Validar</button>
+                </div>
+            </div>
+
+            <div class="platform" id="instagram">
+                <h2 class="futuristic-title">Instagram</h2>
+                <div class="pricing">
+                    <label for="instagram-followers">Cantidad de Seguidores:</label>
+                    <input type="number" id="instagram-followers" value="1000" min="1000" onchange="updatePrice('Instagram', 10)">
+                    <p>Precio total: $<span id="instagram-price">10</span> USD</p>
+                </div>
+                <button class="buy-btn" onclick="showPayment('instagram', 10)">Comprar</button>
+                <div id="instagram-payment" class="payment hidden">
+                    <h3>Pago por Nequi</h3>
+                    <img src="Qr.jpg" alt="Código QR de Nequi" class="qr-code">
+                    <p>Después de enviar el pago, haz clic en "Validar".</p>
+                    <button class="validate-btn" id="instagram-validate-btn">Validar</button>
+                </div>
+            </div>
+
+            <div class="platform" id="facebook">
+                <h2 class="futuristic-title">Facebook</h2>
+                <div class="pricing">
+                    <label for="facebook-followers">Cantidad de Seguidores:</label>
+                    <input type="number" id="facebook-followers" value="1000" min="1000" onchange="updatePrice('Facebook', 4)">
+                    <p>Precio total: $<span id="facebook-price">4</span> USD</p>
+                </div>
+                <button class="buy-btn" onclick="showPayment('facebook', 4)">Comprar</button>
+                <div id="facebook-payment" class="payment hidden">
+                    <h3>Pago por Nequi</h3>
+                    <img src="Qr.jpg" alt="Código QR de Nequi" class="qr-code">
+                    <p>Después de enviar el pago, haz clic en "Validar".</p>
+                    <button class="validate-btn" id="facebook-validate-btn">Validar</button>
+                </div>
+            </div>
+
+            <div class="platform" id="kick">
+                <h2 class="futuristic-title">Kick</h2>
+                <div class="pricing">
+                    <label for="kick-followers">Cantidad de Seguidores:</label>
+                    <input type="number" id="kick-followers" value="1000" min="1000" onchange="updatePrice('Kick', 15)">
+                    <p>Precio total: $<span id="kick-price">15</span> USD</p>
+                </div>
+                <button class="buy-btn" onclick="showPayment('kick', 15)">Comprar</button>
+                <div id="kick-payment" class="payment hidden">
+                    <h3>Pago por Nequi</h3>
+                    <img src="Qr.jpg" alt="Código QR de Nequi" class="qr-code">
+                    <p>Después de enviar el pago, haz clic en "Validar".</p>
+                    <button class="validate-btn" id="kick-validate-btn">Validar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
